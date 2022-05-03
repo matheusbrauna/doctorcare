@@ -121,6 +121,7 @@ nav.scroll {
   width: 100%;
   background-color: var(--brand-hover);
   transition: background 0.2s;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
 }
 
 nav.scroll .icon-logotipo {
@@ -307,6 +308,7 @@ header {
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
 
   display: flex;
   flex-direction: column;
