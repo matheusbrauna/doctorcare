@@ -20,85 +20,165 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
-  <body onscroll="onScroll()" class="menu-expanded">
-    <nav id="navigation" class="">
-      <div class="container">
-        <a href="#">
-          <img src="./assets/images/Logo.svg" alt="Logo" class="logo" />
-          <i class="icon-logotipo"></i>
-        </a>
+  <body onscroll="onScroll()">
+    <nav id="navigation">
+      <div class="wrapper">
+        <a href="#home" class="logo" onclick="closeMenu()"
+          >Doctor<span>Care</span></a
+        >
 
         <div class="menu">
-          <ul>
-            <li><a href="#home"></a>Início</li>
-            <li><a href="#about"></a>Sobre</li>
-            <li><a href="#services"></a>Services</li>
-          </ul>
+          <div class="menu-links">
+            <ul>
+              <li><a onclick="closeMenu()" href="#home">Início</a></li>
+              <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+              <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            </ul>
 
-          <a class="button" href="#">Agende sua consulta</a>
+            <a href="#contact" class="button">Agende sua consulta </a>
+          </div>
 
-          <ul class="social-links">
-            <li>
-              <a target="_blank" href="https://instagram.com">
-                <i class="icon-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://facebook.com">
-                <i class="icon-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://youtube.com">
-                <i class="icon-youtube"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="socials">
+            <a href="https://instagram.com"><i class="icon-instagram"></i></a>
+            <a href="https://facebook.com"><i class="icon-facebook"></i></a>
+            <a href="https://youtube.com"><i class="icon-youtube"></i></a>
+          </div>
         </div>
 
-        <div onclick="openMenu()" class="toggle icon-Icon"></div>
-        <div onclick="closeMenu()" class="toggle icon-Close"></div>
+        <button class="toggle icon-Icon" onclick="openMenu()"></button>
+        <button class="toggle icon-Close" onclick="closeMenu()"></button>
       </div>
     </nav>
 
-    <header class="container">
-      <div class="header-text">
-        <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-        <h1>Assistência médica simplificada para todos</h1>
-        <p>
-          Os médicos da DoctorCare vão além dos sintomas para tratar a causa
-          raiz de sua doença e proporcionar uma cura a longo prazo.
-        </p>
-        <a href="#" class="button"
-          ><i class="icon-whatsapp"></i>Agende sua consulta</a
-        >
-      </div>
+    <section id="home">
+      <div class="wrapper">
+        <header>
+          <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+          <h1>Assistência médica simplificada para todos</h1>
+        </header>
 
-      <div class="header-image">
-        <img
-          src="./assets/images/woman.png"
-          alt="Mulher negra de roupa verde sorrindo"
-        />
-      </div>
+        <div class="content">
+          <p>
+            Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+            raiz de sua doença e proporcionar uma cura a longo prazo.
+          </p>
 
-      <div class="stats">
-        <div class="stat">
-          <h3>+3.500</h3>
-          <p>Pacientes atendidos</p>
+          <a href="#" class="button"
+            ><i class="icon-whatsapp"></i> Agende sua consulta</a
+          >
+
+          <img
+            src="./assets/images/woman.png"
+            alt="Mulher negra de roupa verde sorrindo"
+          />
         </div>
 
-        <div class="stat">
-          <h3>+15</h3>
-          <p>Especialistas disponíveis</p>
-        </div>
+        <div class="stats wrapper">
+          <div class="stat">
+            <h3>+3.500</h3>
+            <p>Pacientes atendidos</p>
+          </div>
 
-        <div class="stat">
-          <h3>+10</h3>
-          <p>Anos no mercado</p>
+          <div class="stat">
+            <h3>+15</h3>
+            <p>Especialistas disponíveis</p>
+          </div>
+
+          <div class="stat">
+            <h3>+10</h3>
+            <p>Anos no mercado</p>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>SERVIÇOS</h4>
+          <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+        </header>
+
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <h3>Saúde Hormonal</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <h3>Bem-estar mental</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <h3>Cuidados Pediátricos</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <h3>Autoimune e Inflamação</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <h3>Saúde do Coração</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrapper">
+        <header>
+          <h4>SOBRE NÓS</h4>
+          <h2>Entenda quem somos e por que existimos</h2>
+        </header>
+
+        <div class="content">
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim. Amet minim mollit non
+            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim. Amet minim mollit non deserunt ullamco est sit
+            aliqua dolor do amet sint. Velit officia consequat duis enim. Amet
+            minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim. Amet minim mollit non deserunt
+            ullamco est sit aliqua dolor do amet sint.
+          </p>
+          <img
+            src="./assets/images/happy-doctor-holding-a-clipboard-with-patients.png"
+            alt="Doutor feliz segurando uma prancheta com pacientes"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- MAIN JS -->
     <script src="./main.js"></script>
   </body>
 </html>
