@@ -158,7 +158,6 @@ nav {
   top: 0;
   left: 0;
   z-index: 100;
-  transition: 300ms;
 }
 
 nav .wrapper {
@@ -279,7 +278,6 @@ body.menu-expanded .toggle.icon-Close {
 #navigation.scroll {
   background-color: var(--brand-hover);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-  transition: 300ms;
 }
 
 #navigation.scroll .logo {
@@ -383,6 +381,13 @@ body.menu-expanded .toggle.icon-Close {
   border-radius: 0.6rem;
 }
 
+#services .content .cards .card .icon-check {
+  font-size: 2.4rem;
+  color: var(--brand-light);
+  background-color: var(--brand);
+  border-radius: 50%;
+}
+
 #services .content .cards .card h3 {
   margin-block: 1.6rem;
   font-weight: 700;
@@ -413,4 +418,127 @@ body.menu-expanded .toggle.icon-Close {
 #about .content p {
   font-size: 1.6rem;
   margin-bottom: 6rem;
+}
+
+/* CONTACT */
+#contact {
+  text-align: left;
+}
+
+#contact .content ul {
+  margin-block: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#contact .content ul li {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: var(--paragraph);
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#contact .content ul li i {
+  font-size: 2.4rem;
+  color: var(--brand);
+}
+
+#contact .content .button {
+  margin-bottom: 6rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--brand);
+  padding-block: 6rem;
+
+  text-align: left;
+  color: var(--brand-beige);
+}
+
+footer .logo,
+footer .logo span {
+  display: inline-block;
+  font-size: 3.43rem;
+  color: var(--brand-beige);
+}
+
+footer .wrapper p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2;
+
+  color: var(--brand-beige);
+
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+footer .socials {
+  display: flex;
+  gap: 3.2rem;
+
+  font-size: 2.4rem;
+}
+
+footer .socials a i {
+  color: var(--brand-beige);
+}
+
+/* BACK TO TOP */
+#backToTopArrow {
+  position: fixed;
+  right: 2.4rem;
+  bottom: 1rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopArrow.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 76.8rem;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+  }
+
+  img {
+    width: 37.5rem;
+  }
+
+  #about .wrapper {
+    text-align: center;
+  }
+
+  #contact .wrapper {
+    text-align: center;
+  }
+
+  #contact .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+  }
+
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

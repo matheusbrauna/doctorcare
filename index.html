@@ -20,13 +20,15 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
-  <body onscroll="onScroll()">
+  <body>
+    <!-- NAVIGATION -->
     <nav id="navigation">
       <div class="wrapper">
         <a href="#home" class="logo" onclick="closeMenu()"
-          >Doctor<span>Care</span></a
-        >
+          >Doctor<span>Care</span>
+        </a>
 
+        <!-- EXPANDED MENU -->
         <div class="menu">
           <div class="menu-links">
             <ul>
@@ -35,7 +37,9 @@
               <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
             </ul>
 
-            <a href="#contact" class="button">Agende sua consulta </a>
+            <a href="#contact" class="button" onclick="closeMenu()"
+              >Agende sua consulta
+            </a>
           </div>
 
           <div class="socials">
@@ -50,6 +54,7 @@
       </div>
     </nav>
 
+    <!-- SECTION HOME -->
     <section id="home">
       <div class="wrapper">
         <header>
@@ -92,6 +97,7 @@
       </div>
     </section>
 
+    <!-- SECTION SERVICES -->
     <section id="services">
       <div class="wrapper">
         <header>
@@ -102,7 +108,23 @@
         <div class="content">
           <div class="cards">
             <div class="card">
-              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
               <h3>Saúde Hormonal</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -111,7 +133,22 @@
             </div>
 
             <div class="card">
-              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <h3>Bem-estar mental</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -120,7 +157,22 @@
             </div>
 
             <div class="card">
-              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <h3>Cuidados Pediátricos</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -129,7 +181,22 @@
             </div>
 
             <div class="card">
-              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <h3>Autoimune e Inflamação</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -138,7 +205,22 @@
             </div>
 
             <div class="card">
-              <img src="./assets/images/Group 2.svg" alt="Check logo" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18182L10.091 15.1818L6.90918 12"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <h3>Saúde do Coração</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -150,6 +232,7 @@
       </div>
     </section>
 
+    <!-- SECTION ABOUT -->
     <section id="about">
       <div class="wrapper">
         <header>
@@ -175,6 +258,85 @@
         </div>
       </div>
     </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+      <div class="wrapper">
+        <header>
+          <h2>Entre em contato com a gente!</h2>
+        </header>
+
+        <div class="content">
+          <div class="contacts">
+            <ul>
+              <li><i class="icon-map-pin"></i>R. Amauri Souza, 346</li>
+              <li><i class="icon-mail"></i>contato@doctorcare.com</li>
+            </ul>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=+5511998456754&text=Olá! Gostaria de agendar uma consulta"
+              class="button"
+              target="_blank"
+            >
+              <i class="icon-whatsapp"></i> Agende sua consulta
+            </a>
+          </div>
+
+          <img
+            src="./assets/images/man.png"
+            alt="Homem negro de camisa bege mexendo no celular e sorrindo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="wrapper">
+        <div>
+          <a href="#home" class="logo">Doctor<span>Care</span></a>
+
+          <p>
+            ©2021 DoctorCare. <br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div class="socials">
+          <a href="https://instagram.com"><i class="icon-instagram"></i></a>
+          <a href="https://facebook.com"><i class="icon-facebook"></i></a>
+          <a href="https://youtube.com"><i class="icon-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <a href="#home" id="backToTopArrow"
+      ><svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20Z"
+          fill="#00856F"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M20 12C20.5523 12 21 12.4477 21 13V27C21 27.5523 20.5523 28 20 28C19.4477 28 19 27.5523 19 27V13C19 12.4477 19.4477 12 20 12Z"
+          fill="white"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M19.2929 12.2929C19.6834 11.9024 20.3166 11.9024 20.7071 12.2929L27.7071 19.2929C28.0976 19.6834 28.0976 20.3166 27.7071 20.7071C27.3166 21.0976 26.6834 21.0976 26.2929 20.7071L20 14.4142L13.7071 20.7071C13.3166 21.0976 12.6834 21.0976 12.2929 20.7071C11.9024 20.3166 11.9024 19.6834 12.2929 19.2929L19.2929 12.2929Z"
+          fill="white"
+        />
+      </svg>
+    </a>
 
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
