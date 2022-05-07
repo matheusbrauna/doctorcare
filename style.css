@@ -340,9 +340,8 @@ body.menu-expanded .toggle.icon-Close {
   color: var(--brand);
 }
 
-#home .content img {
+#home .col-b img {
   display: block;
-  object-position: 0 20px;
   margin-inline: auto;
 }
 
