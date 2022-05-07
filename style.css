@@ -310,7 +310,7 @@ body.menu-expanded .toggle.icon-Close {
   z-index: -5;
 
   width: 100%;
-  height: 78.5%;
+  height: 85%;
 
   background-color: var(--brand-light);
 }
