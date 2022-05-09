@@ -78,3 +78,12 @@ window.addEventListener('scroll', () => {
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
 })
+
+function changeColor() {
+  const colorHue = getComputedStyle(document.documentElement).getPropertyValue(
+    '--hue'
+  )
+
+  const r = document.querySelector(':root')
+  r.style.setProperty('--hue', Math.floor(Math.random() * 360))
+}
