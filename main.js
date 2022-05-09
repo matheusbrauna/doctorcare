@@ -80,10 +80,17 @@ window.addEventListener('scroll', () => {
 })
 
 function changeColor() {
-  const colorHue = getComputedStyle(document.documentElement).getPropertyValue(
-    '--hue'
-  )
+  const getRootSelector = document.querySelector(':root')
+  getRootSelector.style.setProperty('--hue', Math.floor(Math.random() * 360))
 
-  const r = document.querySelector(':root')
-  r.style.setProperty('--hue', Math.floor(Math.random() * 360))
+  localStorage.setItem('hue', getRootSelector.style.getPropertyValue('--hue'))
+}
+
+onload = () => {
+  const hue = localStorage.getItem('hue')
+  if (hue) {
+    document.querySelector(':root').style.setProperty('--hue', hue)
+  } else {
+    changeColor()
+  }
 }
