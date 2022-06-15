@@ -1,3 +1,12 @@
+window.addEventListener('scroll', () => {
+  showNavOnScroll()
+  showBackToTopArrow()
+  activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(contact)
+})
+
 function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add('scroll')
@@ -69,15 +78,6 @@ ScrollReveal({
   footer .logo,
   footer  p,
   footer .socials`)
-
-window.addEventListener('scroll', () => {
-  showNavOnScroll()
-  showBackToTopArrow()
-  activateMenuAtCurrentSection(home)
-  activateMenuAtCurrentSection(services)
-  activateMenuAtCurrentSection(about)
-  activateMenuAtCurrentSection(contact)
-})
 
 function changeColor() {
   const getRootSelector = document.querySelector(':root')
