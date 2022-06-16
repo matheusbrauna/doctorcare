@@ -1,3 +1,6 @@
+const navigation = document.querySelector('nav')
+const backToTopArrow = document.querySelector('#backToTopArrow')
+
 function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add('scroll')
@@ -71,12 +74,12 @@ ScrollReveal({
   footer .socials`)
 
 window.addEventListener('scroll', () => {
-    showNavOnScroll()
-    showBackToTopArrow()
-    activateMenuAtCurrentSection(home)
-    activateMenuAtCurrentSection(services)
-    activateMenuAtCurrentSection(about)
-    activateMenuAtCurrentSection(contact)
+  showNavOnScroll()
+  showBackToTopArrow()
+  activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(contact)
 })
 
 function changeColor() {
