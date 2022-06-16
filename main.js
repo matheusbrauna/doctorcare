@@ -54,7 +54,7 @@ function activateMenuAtCurrentSection(section) {
 
 ScrollReveal({
   origin: 'top',
-  distance: '40px',
+  distance: '30px',
   duration: 700,
   reset: true,
 }).reveal(`
@@ -89,11 +89,10 @@ function changeColor() {
   localStorage.setItem('hue', getRootSelector.style.getPropertyValue('--hue'))
 }
 
-onload = () => {
+function setColor() {
   const hue = localStorage.getItem('hue')
   if (hue) {
     document.querySelector(':root').style.setProperty('--hue', hue)
-  } else {
-    changeColor()
   }
+  return
 }
