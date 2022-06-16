@@ -17,7 +17,7 @@
 # Features
 
 - [x] Animações de scroll.
-- [x] Site responsivo. 
+- [x] Site responsivo.
 - [x] Menu para dispositivos mobile.
 - [x] Botão para voltar ao topo da página.
 - [x] Mudar a cor de todo o site alearioriamente com um clique.
@@ -28,8 +28,8 @@
 
 <h1 align="center">
   <a href="https://matheusbrauna.github.io/nlw-return/">
-    <img src="./github/image1.png" alt="Imagem de demonstração do projeto">
-  <a/>
+    <img src="assets/github/doctor-care.png" alt="Imagem de demonstração do projeto">
+  </a>
 </h1>
 
 ---
