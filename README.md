@@ -27,7 +27,7 @@
 # Demo 🎥
 
 <h1 align="center">
-  <a href="https://matheusbrauna.github.io/nlw-return/">
+  <a href="https://matheusbrauna.github.io/doctorcare/">
     <img src="assets/github/doctor-care.png" alt="Imagem de demonstração do projeto">
   </a>
 </h1>
