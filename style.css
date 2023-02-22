@@ -21,6 +21,7 @@ button {
 :root {
   /* 1rem = 10px */
   font-size: 62.5%;
+  --hue: 0;
 
   /* Primary Colors */
   --brand: hsl(var(--hue), 100%, 26%);
